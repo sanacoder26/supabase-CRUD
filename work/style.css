@@ -1,0 +1,106 @@
+
+
+
+/* Task Cards */
+.card {
+  background-color: #111;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: #ffffff;
+  transition: 0.3s ease,0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,123,255,0.5); /* blue glow */
+}
+
+/* Card Title & Text */
+.card-title {
+  color: #007bff; /* blue */
+  font-weight: bold;
+}
+
+.card-text,
+.card-body div {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Badges for status */
+.badge-low {
+  background-color: #2e7d32; /* green */
+}
+
+.badge-medium {
+  background-color: #f9a825; /* yellow */
+  color: #000;
+}
+
+.badge-high {
+  background-color: #d32f2f; /* red */
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #007bff; /* blue theme */
+  color: #000;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover,
+.card .btn-primary:hover {
+  background-color: #0056b3; /* darker blue hover */
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,123,255,0.7); /* subtle glow */
+}
+
+/* Card Buttons inside task card */
+.card .p-2 .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.card .p-2 .btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0,123,255,0.6);
+}
+
+.card .p-2 .btn-danger {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.card .p-2 .btn-danger:hover {
+  background-color: #a21c1c;
+  box-shadow: 0 0 8px rgba(211,47,47,0.6);
+}
+
+/* Responsive buttons (mobile first) */
+.card .p-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card .p-2 .btn {
+  width: 100%;
+}
+
+/* Desktop buttons horizontal */
+@media(min-width: 768px) {
+  .card .p-2 {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .card .p-2 .btn {
+    width: auto;
+    margin-left: 0.5rem;
+  }
+}
+
+/* Table */
+.table {
+  color: #f1f1f1;
+}
