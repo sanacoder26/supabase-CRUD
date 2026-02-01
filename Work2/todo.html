@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div>
+    <button id="btn"onclick="logout()"> Logout</button>
+    
+  </div>
+  
+  <div class="todo-container">
+    <div class="header">
+      <h2>Todo App</h2>
+      <p>Keep it up!</p>
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="counter" id="counter">0/0</div>
+    </div>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Write your task">
+      <button onclick="addTask()">+</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+  <div class="modal" id="editModal">
+    <div class="modal-content">
+      <h3>Edit Task</h3>
+      <input type="text" id="editInput">
+      <div class="modal-buttons">
+        <button class="save-btn" onclick="saveEdit()">Save</button>
+        <button class="cancel-btn" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  
+<script type="module" src="todo.js"></script>
+</body>
+</html>
